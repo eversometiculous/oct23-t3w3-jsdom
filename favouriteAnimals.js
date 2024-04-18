@@ -94,6 +94,9 @@ function addAnimalToList(event, targetInputId) {
 	// 3. Push the text value into the animals array
 	animals.push(foundInputFieldValue);
 
+	// 3.5 Reset the input field
+	targetInputField.value = "";
+
 	// 4. Delete the animal list HTML elements and recreate them
 	createAnimalList();
 	// Make sure this function deletes this existing list first!
