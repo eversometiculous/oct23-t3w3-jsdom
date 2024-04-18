@@ -21,7 +21,7 @@ let animals = [
 function createAnimalList(){
 
 	animals = [...new Set(animals)];
-	// 0. Find the exisiting list HTML and reset it
+	// 0. Find the existing list HTML and reset it
 	let rootOlNode = document.querySelector("ol");
 	rootOlNode.innerHTML = "";
 
@@ -54,7 +54,7 @@ function createAnimalList(){
 function removeAnimalFromList(targetAnimalId){
 	// 1. Find element in list with matching ID 
 	let targetListItem = document.getElementById(targetAnimalId);
-	targetListItem = document.getElementsByClassName
+	// targetListItem = document.getElementsByClassName
 	targetListItem.remove();
 
 	// 2. Check if ID is in array of animals 
@@ -79,6 +79,7 @@ function removeAnimalFromList(targetAnimalId){
 	// 4. Update or wipe & rebuild the animal list HTML 
 
 }
+
 
 function addAnimalToList(event, targetInputId) {
 	// 0. Prevents the default action for the real form - refreshes the page
